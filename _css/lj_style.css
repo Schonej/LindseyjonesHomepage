@@ -985,6 +985,17 @@ p {
   margin-left: 15%;
   padding-top: 1rem;
 }
+.catalogbuttons{
+  display: flex;
+  flex-direction: column;
+}
+.catalogbuttons1{
+  color: black;
+  border: 1px solid #9e9e9e;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  padding: 1rem 3rem;
+}
 /* change transition duration to control the speed of fade effect */
 .carousel-item {
   transition: transform 1s ease-in-out;
@@ -1327,6 +1338,18 @@ p {
 }
 .productname{
   text-align: center;
+}
+.catalogbuttons{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.catalogbuttons1{
+  color: black;
+  border: 1px solid #9e9e9e;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  width: 100%;
 }
 .tiny{
   font-size: 12px;

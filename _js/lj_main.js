@@ -85,8 +85,8 @@ $(document).on("scroll", function(e){
   
 });
 
-const details = document.querySelector(`.borderleft`);
-const description = document.querySelector(`.dszzcription`);
+const details = document.querySelector(`#borderleft`);
+const description = document.querySelector(`#dszzcription`);
 const productDesc = document.querySelector(`.prodcutdesc`);
 const productSpec = document.querySelector(`.productspec`);
 details.style.backgroundColor = '#9e9e9e';
