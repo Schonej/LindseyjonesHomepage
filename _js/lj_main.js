@@ -107,7 +107,7 @@ description.addEventListener(`click`, ()=>{
   productSpec.style.display = 'none';
 });
 
-const catalogslider = document.querySelector(`.catalog2`);
+const catalogslider = document.querySelector(`.catalog1`);
 
 const tl = new TimelineMax(); 
 
