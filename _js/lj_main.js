@@ -79,11 +79,11 @@ for(img_btn of image_buttons){
   });
 }
 
-$(document).on("scroll", function(e){
-  // console.log();
-  // $("#carouselExampleSlidesOnly").css({"margin-top": $(window).scrollTop()+"px"});
+// $(document).on("scroll", function(e){
+//   console.log();
+//   $("#carouselExampleSlidesOnly").css({"margin-top": $(window).scrollTop()+"px"});
   
-});
+// });
 
 const details = document.querySelector(`#borderleft`);
 const description = document.querySelector(`#dszzcription`);
