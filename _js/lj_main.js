@@ -51,64 +51,154 @@ document.addEventListener("keydown", function (event) {
 //   } else overlay3.style.height = `99%`;
 // });
 
-$("#productspage").on("click", ".prod-button", function(e){
-  if($(this).closest(".prod-col").find(".overlay").is(".hide")){
+$("#productspage").on("click", ".prod-button", function (e) {
+  if ($(this).closest(".prod-col").find(".overlay").is(".hide")) {
     $(this).closest(".prod-col").find(".overlay").removeClass("hide");
     $(this).closest(".prod-col").find(".overlay").addClass("show");
   } else {
     $(this).closest(".prod-col").find(".overlay").removeClass("show");
     $(this).closest(".prod-col").find(".overlay").addClass("hide");
   }
-})
+});
 
 // product page
-const sliderImg = document.querySelector('.sliderImg');
-
-let image_buttons = document.querySelectorAll('.img_button img');
-// console.log(image_buttons);
-for(img_btn of image_buttons){
-  img_btn.addEventListener("click", function(e){
-    // console.log(this);
-    // console.log(this.src);
-    // console.log(this.getAttribute("blah"));
-    // console.log(e);
-
-    sliderImg.setAttribute('src', this.getAttribute("src"));
-    // sliderImg.setAttribute('src', this.src);
-    // sliderImg.src = this.src;
+const sliderImg = document.querySelector("#sliderMain1");
+let image_buttons = document.querySelectorAll(".img_button img");
+for (img_btn of image_buttons) {
+  img_btn.addEventListener("click", function (e) {
+    sliderImg.setAttribute("src", this.getAttribute("src"));
   });
 }
 
-// $(document).on("scroll", function(e){
-//   console.log();
-//   $("#carouselExampleSlidesOnly").css({"margin-top": $(window).scrollTop()+"px"});
-  
+const sliderImg2 = document.querySelector("#sliderMain2");
+let image_buttons2 = document.querySelectorAll(".img_button2 img");
+for (img_btn of image_buttons2) {
+  img_btn.addEventListener("click", function (e) {
+    sliderImg2.setAttribute("src", this.getAttribute("src"));
+  });
+}
+
+const sliderImg3 = document.querySelector("#sliderMain3");
+let image_buttons3 = document.querySelectorAll(".img_button3 img");
+for (img_btn of image_buttons3) {
+  img_btn.addEventListener("click", function (e) {
+    sliderImg3.setAttribute("src", this.getAttribute("src"));
+  });
+}
+
+const sliderImg4 = document.querySelector("#sliderMain4");
+let image_buttons4 = document.querySelectorAll(".img_button4 img");
+for (img_btn of image_buttons4) {
+  img_btn.addEventListener("click", function (e) {
+    sliderImg4.setAttribute("src", this.getAttribute("src"));
+  });
+}
+
+// $(document).on("scroll", function (e) {
+//   $("#carouselExampleSlidesOnly").css({
+//     "margin-top": $(window).scrollTop() + "px",
+//   });
 // });
 
-const details = document.querySelector(`#borderleft`);
-const description = document.querySelector(`#dszzcription`);
-const productDesc = document.querySelector(`.prodcutdesc`);
-const productSpec = document.querySelector(`.productspec`);
-details.style.backgroundColor = '#9e9e9e';
+//First button
+const details1 = document.querySelector(`#borderleft1`);
+const description1 = document.querySelector(`#dszzcription1`);
 
-details.addEventListener(`click`, ()=>{
-  productSpec.style.display = 'block';
-  details.style.backgroundColor = '#9e9e9e';
-  description.style.backgroundColor = '';
-  description.style.opacity = '';
-  productDesc.style.display = 'none';
+const productDesc1 = document.querySelector(`#productdesc1`);
+const productSpec1 = document.querySelector(`#productspec1`);
+details1.style.backgroundColor = "#9e9e9e";
+
+details1.addEventListener(`click`, () => {
+  productSpec1.style.display = "block";
+  details1.style.backgroundColor = "#9e9e9e";
+  description1.style.backgroundColor = "";
+  description1.style.opacity = "";
+  productDesc1.style.display = "none";
 });
 
-description.addEventListener(`click`, ()=>{
-  productDesc.style.display = 'block';
-  description.style.backgroundColor = '#9e9e9e';
-  details.style.backgroundColor = '';
-  details.style.opacity = '';
-  productSpec.style.display = 'none';
+description1.addEventListener(`click`, () => {
+  productDesc1.style.display = "block";
+  description1.style.backgroundColor = "#9e9e9e";
+  details1.style.backgroundColor = "";
+  details1.style.opacity = "";
+  productSpec1.style.display = "none";
 });
 
-const catalogslider = document.querySelector(`.catalog1`);
+//Second Button
+const details2 = document.querySelector(`#borderleft2`);
+const description2 = document.querySelector(`#dszzcription2`);
 
-const tl = new TimelineMax(); 
+const productDesc2 = document.querySelector(`#productdesc2`);
+const productSpec2 = document.querySelector(`#productspec2`);
+details2.style.backgroundColor = "#9e9e9e";
 
-tl.fromTo(catalogslider, 2, {opacity: 0, y: 50}, {opacity: 1, y:0}, "-=0.5");
+details2.addEventListener(`click`, () => {
+  productSpec2.style.display = "block";
+  details2.style.backgroundColor = "#9e9e9e";
+  description2.style.backgroundColor = "";
+  description2.style.opacity = "";
+  productDesc2.style.display = "none";
+});
+
+description2.addEventListener(`click`, () => {
+  productDesc2.style.display = "block";
+  description2.style.backgroundColor = "#9e9e9e";
+  details2.style.backgroundColor = "";
+  details2.style.opacity = "";
+  productSpec2.style.display = "none";
+});
+
+//Third
+const details3 = document.querySelector(`#borderleft3`);
+const description3 = document.querySelector(`#dszzcription3`);
+
+const productDesc3 = document.querySelector(`#productdesc3`);
+const productSpec3 = document.querySelector(`#productspec3`);
+details3.style.backgroundColor = "#9e9e9e";
+
+details3.addEventListener(`click`, () => {
+  productSpec3.style.display = "block";
+  details3.style.backgroundColor = "#9e9e9e";
+  description3.style.backgroundColor = "";
+  description3.style.opacity = "";
+  productDesc3.style.display = "none";
+});
+
+description3.addEventListener(`click`, () => {
+  productDesc3.style.display = "block";
+  description3.style.backgroundColor = "#9e9e9e";
+  details3.style.backgroundColor = "";
+  details3.style.opacity = "";
+  productSpec3.style.display = "none";
+});
+
+//Fourth
+const details4 = document.querySelector(`#borderleft4`);
+const description4 = document.querySelector(`#dszzcription4`);
+
+const productDesc4 = document.querySelector(`#productdesc4`);
+const productSpec4 = document.querySelector(`#productspec4`);
+
+details4.style.backgroundColor = "#9e9e9e";
+
+details4.addEventListener(`click`, () => {
+  productSpec4.style.display = "block";
+  details4.style.backgroundColor = "#9e9e9e";
+  description4.style.backgroundColor = "";
+  description4.style.opacity = "";
+  productDesc4.style.display = "none";
+});
+
+description4.addEventListener(`click`, () => {
+  productDesc4.style.display = "block";
+  description4.style.backgroundColor = "#9e9e9e";
+  details4.style.backgroundColor = "";
+  details4.style.opacity = "";
+  productSpec4.style.display = "none";
+});
+
+// const catalogslider = document.querySelector(`.catalog1`);
+
+// const tl = new TimelineMax();
+
+// tl.fromTo(catalogslider, 2, {opacity: 0, y: 50}, {opacity: 1, y:0}, "-=0.5");

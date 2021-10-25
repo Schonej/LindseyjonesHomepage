@@ -880,7 +880,11 @@ p {
   display: flex;
   flex-direction: column;
   padding-bottom: 2rem;
-  background: linear-gradient( 20deg, rgba(200,200,200,.6), rgba(255,255,255,0) 30% );
+  background: linear-gradient(
+    20deg,
+    rgba(200, 200, 200, 0.6),
+    rgba(255, 255, 255, 0) 30%
+  );
 }
 #dark2 {
   background-color: #2a2e33;
@@ -954,6 +958,10 @@ p {
   flex-direction: column;
   text-align: center;
   margin-bottom: 1rem;
+  text-decoration: none;
+}
+.catalogbuttons a {
+  text-decoration: none;
 }
 .catalogbuttons1 {
   font-size: 16px;
@@ -961,6 +969,14 @@ p {
   color: black;
   padding: 10px;
   border-radius: 0.1rem;
+  text-decoration: none;
+}
+.catalogbuttons1:hover {
+  background-color: #fafafa;
+  background-color: #80da18;
+  color: #191919;
+  text-decoration: none;
+  border: 1px solid transparent;
 }
 .productspec {
   color: #8d8d8d;
@@ -999,17 +1015,33 @@ p {
 .carousel-item {
   transition: transform 1s ease-in-out;
 }
-.carousel-overlay:before{
-  content: '';
-  position:absolute;
-  top:0;
+.carousel-overlay:before {
+  content: "";
+  position: absolute;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: -webkit-linear-gradient(-110deg, rgba(255,255,255,0) 35%, rgba(255,255,255,1) 80%); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-110deg, rgba(255,255,255,0) 35%, rgba(255,255,255,1) 80%); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-110deg, rgba(255,255,255,0) 35%, rgba(255,255,255,1) 80%); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-110deg, rgba(255,255,255,0) 35%, rgba(255,255,255,1) 80%);
+  background: -webkit-linear-gradient(
+    -110deg,
+    rgba(255, 255, 255, 0) 35%,
+    rgba(255, 255, 255, 1) 80%
+  ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(
+    -110deg,
+    rgba(255, 255, 255, 0) 35%,
+    rgba(255, 255, 255, 1) 80%
+  ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(
+    -110deg,
+    rgba(255, 255, 255, 0) 35%,
+    rgba(255, 255, 255, 1) 80%
+  ); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(
+    -110deg,
+    rgba(255, 255, 255, 0) 35%,
+    rgba(255, 255, 255, 1) 80%
+  );
   z-index: 21;
 }
 .carousel-fade .active.carousel-item-start,
@@ -1024,7 +1056,50 @@ p {
   text-align: center;
   font-size: 18px;
   z-index: 22;
-  text-shadow: 2px 2px 2px white, -2px 2px 2px white, 2px -2px 2px white, -2px -2px 2px white;
+  text-shadow: 2px 2px 2px white, -2px 2px 2px white, 2px -2px 2px white,
+    -2px -2px 2px white;
+}
+.MainCnt-topModal{
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+}
+.MainCnt-Checker{
+  margin: auto;
+}
+.MainCnt-topModal img{
+  width: 100%;
+  margin: auto;
+}
+.purchase-btn-top {
+  width: 100%;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  padding: 15px;
+  background: -webkit-linear-gradient( rgba(255,255,255,0) , rgba(255,255,255,1) ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient( rgba(255,255,255,0) , rgba(255,255,255,1) ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient( rgba(255,255,255,0) , rgba(255,255,255,1)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient( orange, #ff6600 );
+  color: white;
+  border-radius: 10px;
+  margin:20px 25%;
+  box-shadow: 2px 2px 3px rgba(0,0,0,.2);
+  text-shadow: 1px 1px 2px rgba(0,0,0,.2);
+  border: #ff6600 2px solid;
+  -webkit-transition: background 2s;
+  transition: background 2s;
+  text-align:center;
+  margin: auto;
+  margin-top: 1rem;
+}
+.purchase-btn-top .purchase-btn-top:hover {
+  background: linear-gradient( #ff6600, #ff6600 );
+}
+.MainCnt-footer {
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
 }
 /* Temp styles for display */
 @media screen and (min-width: 700px) {
