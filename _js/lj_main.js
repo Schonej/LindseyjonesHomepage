@@ -196,6 +196,7 @@ description4.addEventListener(`click`, () => {
   details4.style.opacity = "";
   productSpec4.style.display = "none";
 });
+  
 
 // const catalogslider = document.querySelector(`.catalog1`);
 
