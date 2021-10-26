@@ -1011,6 +1011,13 @@ p {
   display: flex;
   flex-direction: column;
 }
+.top-carousel{
+  display: none;
+}
+.top-carousel2{
+  display: block;
+  margin-top: 1rem;
+}
 /* change transition duration to control the speed of fade effect */
 .carousel-item {
   transition: transform 1s ease-in-out;
@@ -1076,7 +1083,7 @@ p {
   height: auto;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2em;
-  padding: 15px;
+  padding: 5px;
   background: -webkit-linear-gradient( rgba(255,255,255,0) , rgba(255,255,255,1) ); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient( rgba(255,255,255,0) , rgba(255,255,255,1) ); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient( rgba(255,255,255,0) , rgba(255,255,255,1)); /* For Firefox 3.6 to 15 */
@@ -1100,6 +1107,9 @@ p {
     text-align: center;
     margin: auto;
     padding: 1rem;
+}
+.product_price{
+  margin-left: 1rem;
 }
 /* Temp styles for display */
 @media screen and (min-width: 700px) {
@@ -1537,6 +1547,9 @@ p {
     flex-direction: column;
     margin: auto;
   }
+  .carousel{
+    position: relative;
+  }
   /* change transition duration to control the speed of fade effect */
   .carousel-item {
     transition: transform 1s ease-in-out;
@@ -1915,6 +1928,9 @@ p {
     margin: auto;
     margin-top: 1rem;
   }
+  .carousel{
+    position: absolute;
+  }
   /* change transition duration to control the speed of fade effect */
   .carousel-item {
     transition: transform 1s ease-in-out;
@@ -1925,6 +1941,12 @@ p {
   }
   .carousel .quotezz {
     text-align: center;
+  }
+  .top-carousel{
+    display: block;
+  }
+  .top-carousel2{
+    display: none;
   }
 }
 

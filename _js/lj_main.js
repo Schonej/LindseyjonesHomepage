@@ -94,11 +94,12 @@ for (img_btn of image_buttons4) {
   });
 }
 
-// $(document).on("scroll", function (e) {
-//   $("#carouselExampleSlidesOnly").css({
-//     "margin-top": $(window).scrollTop() + "px",
-//   });
-// });
+
+$(document).on("scroll", function (e) {
+  $("#carouselExampleSlidesOnly").css({
+    "margin-top": $(window).scrollTop() + "px",
+  });
+});
 
 //First button
 const details1 = document.querySelector(`#borderleft1`);
